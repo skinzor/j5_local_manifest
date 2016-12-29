@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="bb"
+          fetch="https://bitbucket.org/" />
+
+<!-- Remove packages -->
+  <remove-project name="CyanogenMod/android_packages_services_Telecomm" />
+  <remove-project name="ResurrectionRemix/android_packages_apps_LockClock" />
+  <remove-project name="ResurrectionRemix/packages_apps_OTACenter" />
+
+<!-- SetupWizard -->
+  <project name="CyanogenMod/android_packages_apps_SetupWizard"  path="packages/apps/SetupWizard"   remote="github" revision="cm-12.1"/>
+
+<!-- Remove AOSP Toolchain -->
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" />
+
+
+<!-- OTA Updates -->
+  <project name="skinzor/packages_apps_SlimOTA"  path="packages/apps/SlimOTA"   remote="github" revision="lp5.0"/>
+
+
+<!-- TWRP sources -->
+  <project name="omnirom/android_bootable_recovery"              path="bootable/recovery-twrp"      remote="github" revision="android-6.0" />
+
+
+<!-- Common J5 sources -->
+  <project name="Galaxy-J5/android_device_samsung_j5-common"     path="device/samsung/j5-common"    remote="github" revision="cm-12.1" />
+  <project name="Galaxy-J5/proprietary_vendor_samsung_j5-common" path="vendor/samsung/j5-common"    remote="github" revision="cm-12.1" />
+
+<!-- Kernel Source -->  
+  <project name="Galaxy-J5/kernel_samsung_j5lte"                 path="kernel/samsung/j5lte"        remote="github" revision="cm-12.1" />
+
+<!-- SM-J500F sources -->
+  <project name="Galaxy-J5/android_device_samsung_j5ltexx"       path="device/samsung/j5ltexx"      remote="github" revision="cm-12.1" />
+  <project name="Galaxy-J5/proprietary_vendor_samsung_j5ltexx"   path="vendor/samsung/j5ltexx"      remote="github" revision="cm-12.1" />
+<!-- SM-J500M sources -->
+  <project name="Galaxy-J5/android_device_samsung_j5lteub"       path="device/samsung/j5lteub"      remote="github" revision="cm-12.1" />
+  <project name="Galaxy-J5/proprietary_vendor_samsung_j5lteub"   path="vendor/samsung/j5lteub"      remote="github" revision="cm-12.1" />
+<!-- SM-J500G sources -->
+  <project name="Galaxy-J5/android_device_samsung_j5ltedx"       path="device/samsung/j5ltedx"      remote="github" revision="cm-12.1" />
+  <project name="Galaxy-J5/proprietary_vendor_samsung_j5ltedx"   path="vendor/samsung/j5ltedx"      remote="github" revision="cm-12.1" />
+<!-- SM-J500H sources -->
+  <project name="Galaxy-J5/android_device_samsung_j53gxx"        path="device/samsung/j53gxx"       remote="github" revision="cm-12.1" />
+  <project name="Galaxy-J5/proprietary_vendor_samsung_j53gxx"    path="vendor/samsung/j53gxx"       remote="github" revision="cm-12.1" />
+<!-- SM-J500FN sources -->
+  <project name="Galaxy-J5/android_device_samsung_j5nltexx"      path="device/samsung/j5nltexx"     remote="github" revision="cm-12.1" />
+  <project name="Galaxy-J5/proprietary_vendor_samsung_j5nltexx"  path="vendor/samsung/j5nltexx"     remote="github" revision="cm-12.1" />
+<!-- SM-J500Y sources -->
+  <project name="Galaxy-J5/android_device_samsung_j5yltedo"      path="device/samsung/j5yltedo"     remote="github" revision="cm-12.1" />
+  <project name="Galaxy-J5/proprietary_vendor_samsung_j5yltedo"  path="vendor/samsung/j5yltedo"     remote="github" revision="cm-12.1" />
+<!-- SM-J5007 sources -->
+  <project name="Galaxy-J5/android_device_samsung_j5ltezt"       path="device/samsung/j5ltezt"      remote="github" revision="cm-12.1" />
+  <project name="Galaxy-J5/proprietary_vendor_samsung_j5ltezt"   path="vendor/samsung/j5ltezt"      remote="github" revision="cm-12.1" />
+<!-- SM-J5008 sources -->
+  <project name="Galaxy-J5/android_device_samsung_j5ltechn"      path="device/samsung/j5ltechn"     remote="github" revision="cm-12.1" />
+  <project name="Galaxy-J5/proprietary_vendor_samsung_j5ltechn"  path="vendor/samsung/j5ltechn"     remote="github" revision="cm-12.1" />
+
+<!-- Hardware -->  
+  <project name="Galaxy-J5/android_device_samsung_qcom-common"   path="device/samsung/qcom-common"  remote="github" revision="cm-12.1" />
+  <project name="CyanogenMod/android_device_qcom_common"         path="device/qcom/common"          remote="github" revision="cm-12.1" />
+  <project name="CyanogenMod/android_hardware_qcom_fm"           path="hardware/qcom/fm"            remote="github" revision="cm-12.1" />
+  <project name="CyanogenMod/android_external_mm-dash"           path="external/mm-dash"            remote="github" revision="cm-12.1" />
+  <project name="CyanogenMod/android_hardware_samsung"           path="hardware/samsung"            remote="github" revision="cm-12.1" />
+
+<!-- RR replacements -->
+  <project path="packages/services/Telecomm" name="Galaxy-J5/android_packages_services_Telecomm"    revision="cm-12.1" />
+  <project path="packages/apps/LockClock"    name="CyanogenMod/android_packages_apps_LockClock"     revision="cm-12.1" />
+
+<!-- JustArchi Toolchain (UBERTC) -->
+<project name="ArchiDroid/Toolchain" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="github" revision="uber-4.9-arm-linux-androideabi" />
+
+</manifest>
